@@ -2,6 +2,8 @@ services:
   windows:
     image: dockurr/windows
     container_name: windows
+    stdin_open: true # Keeps the session open
+    tty: true        # Provides a virtual terminal
     environment:
       VERSION: "11"
       RAM_SIZE: "8G"
